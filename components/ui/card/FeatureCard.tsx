@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { FeatureCardProps } from "@/types";
 import { motion } from "motion/react";
@@ -40,9 +40,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         {title}
       </h3>
 
-      <p className="text-(--neutral-gray-600) leading-relaxed">
-        {description}
-      </p>
+      <p className="text-(--neutral-gray-600) leading-relaxed">{description}</p>
     </motion.div>
   );
 };
