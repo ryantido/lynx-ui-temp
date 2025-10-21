@@ -11,7 +11,7 @@ import {
   STATS,
   TRUST_INDICATORS,
 } from "@/constants/features";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Rocket } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 
@@ -24,7 +24,7 @@ export default function Home() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-(--accent-cyber-end) rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -37,15 +37,14 @@ export default function Home() {
                 transition={{ delay: 0.2 }}
                 className="inline-block mb-6"
               >
-                <span className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">
-                  🚀 Solution IA déployée en 4 semaines
+                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">
+                  <Rocket className="w-4 h-4" /> Solution IA déployée en 4 semaines
                 </span>
               </motion.div>
 
               <h1
-                className="text-white mb-6"
+                className="text-white mb-6 font-poppins"
                 style={{
-                  fontFamily: "var(--font-family-heading)",
                   fontSize: "clamp(2rem, 5vw, 3rem)",
                   lineHeight: "1.2",
                 }}
@@ -77,9 +76,8 @@ export default function Home() {
                     transition={{ delay: 0.4 + index * 0.1 }}
                   >
                     <div
-                      className="text-white mb-1"
+                      className="text-white mb-1 font-poppins"
                       style={{
-                        fontFamily: "var(--font-family-heading)",
                         fontSize: "2rem",
                       }}
                     >
@@ -116,7 +114,7 @@ export default function Home() {
       </section>
 
       <section className="py-20 bg-neutral-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -125,9 +123,8 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2
-              className="mb-4"
+              className="mb-4 font-poppins"
               style={{
-                fontFamily: "var(--font-family-heading)",
                 fontSize: "clamp(1.75rem, 4vw, 2rem)",
               }}
             >
@@ -154,7 +151,7 @@ export default function Home() {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -163,9 +160,8 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2
-              className="mb-4"
+              className="mb-4 font-poppins"
               style={{
-                fontFamily: "var(--font-family-heading)",
                 fontSize: "clamp(1.75rem, 4vw, 2rem)",
               }}
             >
@@ -186,7 +182,7 @@ export default function Home() {
       </section>
 
       <section className="py-20 bg-neutral-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -195,9 +191,8 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2
-              className="mb-4"
+              className="mb-4 font-poppins"
               style={{
-                fontFamily: "var(--font-family-heading)",
                 fontSize: "clamp(1.75rem, 4vw, 2rem)",
               }}
             >
@@ -220,9 +215,8 @@ export default function Home() {
               >
                 <div className="bg-white p-6 rounded-xl shadow-sm h-full">
                   <div
-                    className="text-6xl mb-4 opacity-20"
+                    className="text-6xl mb-4 opacity-20 font-poppins"
                     style={{
-                      fontFamily: "var(--font-family-heading)",
                       background:
                         "linear-gradient(135deg, var(--brand-indigo), var(--accent-cyber-end))",
                       WebkitBackgroundClip: "text",
@@ -232,8 +226,7 @@ export default function Home() {
                     {step.number}
                   </div>
                   <h3
-                    className="mb-2"
-                    style={{ fontFamily: "var(--font-family-heading)" }}
+                    className="mb-2 font-poppins"
                   >
                     {step.title}
                   </h3>
@@ -254,7 +247,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 bg-white border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             {TRUST_INDICATORS.map((item, index) => (
               <motion.div
@@ -270,9 +263,8 @@ export default function Home() {
                   aria-hidden="true"
                 />
                 <div
-                  className="mb-1"
+                  className="mb-1 font-poppins"
                   style={{
-                    fontFamily: "var(--font-family-heading)",
                     fontSize: "1.5rem",
                   }}
                 >
@@ -295,9 +287,8 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2
-              className="mb-4"
+              className="mb-4 font-poppins"
               style={{
-                fontFamily: "var(--font-family-heading)",
                 fontSize: "clamp(1.75rem, 4vw, 2rem)",
               }}
             >
