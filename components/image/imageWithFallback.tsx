@@ -17,7 +17,7 @@ export function ImageWithFallback(
 
   const { src, alt, style, className } = props;
 
-  return !didError ? (
+  return didError ? (
     <div
       className={cn(
         "inline-block text-center align-middle h-full w-full",

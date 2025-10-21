@@ -24,13 +24,13 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         "
     >
       <div
-        className="w-16 h-16 rounded-xl mb-4 flex items-center justify-center"
+        className="w-fit p-2 rounded-xl mb-4 flex items-center justify-center"
         style={{
           background: `linear-gradient(135deg, ${iconColor}15, ${iconColor}05)`,
         }}
       >
         <Icon
-          className="w-8 h-8"
+          className="w-6 h-6"
           style={{ color: iconColor }}
           aria-hidden="true"
         />
