@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "../globals.css";
+import { WhatsAppButton } from "@/components/ui/button/WhatsAppButton";
 
 const poppins = Poppins({
   weight: ["400", "500", "600"],
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} ${inter.variable} antialiased`}>
         {children}
+        <WhatsAppButton/>
       </body>
     </html>
   );
