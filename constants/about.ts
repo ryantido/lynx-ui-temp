@@ -30,7 +30,7 @@ export const VALUES = [
 export const TEAM_MEMBERS = [
   {
     name: "Ryan Tido",
-    role: "CEO & Co-fondatrice",
+    role: "CEO & Co-fondateur",
     expertise: "IA & Stratégie",
   },
   {
