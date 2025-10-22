@@ -4,28 +4,28 @@ export const FOOTER_SECTIONS = [
   {
     title: "Navigation",
     links: [
-      { label: "Accueil", value: "home" },
-      { label: "À propos", value: "about" },
-      { label: "Services", value: "services" },
-      { label: "Contact", value: "contact" },
+      { label: "Accueil", value: "/" },
+      { label: "À propos", value: "/about" },
+      { label: "Services", value: "/services" },
+      { label: "Contact", value: "/contact" },
     ],
   },
   {
     title: "Services",
     links: [
-      { label: "Chatbot WhatsApp", value: "services" },
-      { label: "Automatisation", value: "services" },
-      { label: "Reporting", value: "services" },
-      { label: "Dashboard MVP", value: "services" },
+      { label: "Chatbot WhatsApp", value: "/services" },
+      { label: "Automatisation", value: "/services" },
+      { label: "Reporting", value: "/services" },
+      { label: "Dashboard MVP", value: "/services" },
     ],
   },
   {
     title: "Ressources",
     links: [
-      { label: "Documentation", value: "about" },
-      { label: "Blog", value: "about" },
-      { label: "FAQ", value: "about" },
-      { label: "Support", value: "contact" },
+      { label: "Documentation", value: "/about" },
+      { label: "Blog", value: "/about" },
+      { label: "FAQ", value: "/about" },
+      { label: "Support", value: "/contact" },
     ],
   },
 ] as const;
