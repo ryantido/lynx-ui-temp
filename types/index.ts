@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import type { HTMLMotionProps } from "motion/react";
 
 export type DashboardView = "overview" | "chatbot" | "invoices" | "settings";
 export type ButtonVariant = "primary" | "secondary" | "ghost";
@@ -60,8 +61,7 @@ export interface CaseStudyCardProps {
   onLearnMore?: () => void;
 }
 
-export interface LynxButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface LynxButtonProps extends HTMLMotionProps<"button"> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   icon?: LucideIcon;
