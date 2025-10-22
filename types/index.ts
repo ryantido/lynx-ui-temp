@@ -3,23 +3,8 @@ import type { HTMLMotionProps } from "motion/react";
 
 export type DashboardView = "overview" | "chatbot" | "invoices" | "settings";
 export type ButtonVariant = "primary" | "secondary" | "ghost";
-export type Page = "home" | "about" | "services" | "contact";
 export type InvoiceStatus = "paid" | "pending" | "overdue";
 export type ButtonSize = "default" | "sm" | "lg";
-
-export interface NavigationProps {
-  onNavigate?: (page: string) => void;
-}
-
-export interface HomePageProps {
-  onNavigate?: (page: string) => void;
-  onOpenDashboard?: () => void;
-}
-
-export interface NavbarProps {
-  currentPage?: string;
-  onNavigate?: (page: string) => void;
-}
 
 export interface FAQItem {
   id: string;
