@@ -13,7 +13,7 @@ export const MAIN_SERVICES = [
       "Intégration avec votre CRM",
       "Analytics et rapports détaillés",
     ],
-    pricing: "À partir de 299€/mois",
+    pricing: "À partir de 15000 XAF/mois",
   },
   {
     icon: TicketCheck,
@@ -26,7 +26,7 @@ export const MAIN_SERVICES = [
       "Suivi en temps réel des règlements",
       "Export comptable simplifié",
     ],
-    pricing: "À partir de 199€/mois",
+    pricing: "À partir de 25000 XAF/mois",
   },
   {
     icon: ChartLine,
@@ -39,7 +39,7 @@ export const MAIN_SERVICES = [
       "Prévisions et tendances",
       "Export multi-formats (PDF, Excel)",
     ],
-    pricing: "À partir de 149€/mois",
+    pricing: "À partir de 35000 XAF/mois",
   },
   {
     icon: Workflow,
