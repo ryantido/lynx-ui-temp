@@ -38,7 +38,8 @@ export default function Home() {
                 className="inline-block mb-6"
               >
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">
-                  <Rocket className="w-4 h-4" /> Solution IA déployée en 4 semaines
+                  <Rocket className="w-4 h-4" /> Solution IA déployée en 4
+                  semaines
                 </span>
               </motion.div>
 
@@ -225,11 +226,7 @@ export default function Home() {
                   >
                     {step.number}
                   </div>
-                  <h3
-                    className="mb-2 font-poppins"
-                  >
-                    {step.title}
-                  </h3>
+                  <h3 className="mb-2 font-poppins">{step.title}</h3>
                   <p className="text-(--neutral-gray-600)">
                     {step.description}
                   </p>

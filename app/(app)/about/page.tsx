@@ -1,5 +1,11 @@
 import { LynxButton } from "@/components/ui/button/LynxButton";
-import { MILESTONES, MISSION, STATS, TEAM_MEMBERS, VALUES } from "@/constants/about";
+import {
+  MILESTONES,
+  MISSION,
+  STATS,
+  TEAM_MEMBERS,
+  VALUES,
+} from "@/constants/about";
 import { Award, Rocket, UserRoundCheck } from "lucide-react";
 import Link from "next/link";
 import { AnimatedSection } from "./AnimatedSection";
@@ -10,11 +16,17 @@ export default function AboutPage() {
       <section className="relative bg-linear-to-br from-brand-blue-900 to-brand-black text-white py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h1 className="mb-6 font-poppins" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', lineHeight: '1.2' }}>
+            <h1
+              className="mb-6 font-poppins"
+              style={{ fontSize: "clamp(2rem, 5vw, 3rem)", lineHeight: "1.2" }}
+            >
               Nous révolutionnons l'automatisation pour les PME
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Lynx AI est née d'une conviction : l'intelligence artificielle doit être accessible à toutes les entreprises, pas seulement aux grands groupes. Nous transformons vos défis opérationnels en opportunités de croissance.
+              Lynx AI est née d'une conviction : l'intelligence artificielle
+              doit être accessible à toutes les entreprises, pas seulement aux
+              grands groupes. Nous transformons vos défis opérationnels en
+              opportunités de croissance.
             </p>
           </AnimatedSection>
         </div>
@@ -29,7 +41,9 @@ export default function AboutPage() {
                 <h2 className="font-poppins">Notre Mission</h2>
               </div>
               <p className="text-(--neutral-gray-600) text-lg leading-relaxed mb-6">
-                Démocratiser l'automatisation et l'intelligence artificielle en offrant des solutions clés en main, rapides à déployer et à fort ROI.
+                Démocratiser l'automatisation et l'intelligence artificielle en
+                offrant des solutions clés en main, rapides à déployer et à fort
+                ROI.
               </p>
               <ul className="space-y-3">
                 {MISSION.map((item, index) => (
@@ -45,12 +59,16 @@ export default function AboutPage() {
               <div className="bg-linear-to-br from-brand-indigo to-accent-cyber-end p-8 rounded-2xl text-white">
                 <h2 className="mb-4 font-poppins">Notre Vision</h2>
                 <p className="text-white/90 text-lg leading-relaxed mb-6">
-                  Devenir le partenaire de référence en automatisation pour les PME européennes.
+                  Devenir le partenaire de référence en automatisation pour les
+                  PME européennes.
                 </p>
                 <div className="grid grid-cols-2 gap-6 mt-8">
                   {STATS.map((stat, index) => (
                     <div key={index}>
-                      <div className="text-white mb-1 font-poppins" style={{ fontSize: '2rem' }}>
+                      <div
+                        className="text-white mb-1 font-poppins"
+                        style={{ fontSize: "2rem" }}
+                      >
                         {stat.value}
                       </div>
                       <div className="text-white/80 text-sm">{stat.label}</div>
@@ -66,11 +84,15 @@ export default function AboutPage() {
       <section className="py-20 bg-neutral-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="mb-4 font-poppins" style={{ fontSize: 'clamp(1.75rem, 4vw, 2rem)' }}>
+            <h2
+              className="mb-4 font-poppins"
+              style={{ fontSize: "clamp(1.75rem, 4vw, 2rem)" }}
+            >
               Nos Valeurs
             </h2>
             <p className="text-(--neutral-gray-600) text-lg max-w-2xl mx-auto">
-              Les principes qui guident notre travail quotidien et notre relation avec nos clients.
+              Les principes qui guident notre travail quotidien et notre
+              relation avec nos clients.
             </p>
           </AnimatedSection>
 
@@ -81,10 +103,15 @@ export default function AboutPage() {
                   <div className="w-16 h-16 rounded-full gradient-cyber flex items-center justify-center mx-auto mb-4">
                     <value.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="mb-2" style={{ fontFamily: 'var(--font-family-heading)' }}>
+                  <h3
+                    className="mb-2"
+                    style={{ fontFamily: "var(--font-family-heading)" }}
+                  >
                     {value.title}
                   </h3>
-                  <p className="text-(--neutral-gray-600)">{value.description}</p>
+                  <p className="text-(--neutral-gray-600)">
+                    {value.description}
+                  </p>
                 </div>
               </AnimatedSection>
             ))}
@@ -95,7 +122,10 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="mb-4 font-poppins" style={{ fontSize: 'clamp(1.75rem, 4vw, 2rem)' }}>
+            <h2
+              className="mb-4 font-poppins"
+              style={{ fontSize: "clamp(1.75rem, 4vw, 2rem)" }}
+            >
               Notre Équipe
             </h2>
             <p className="text-(--neutral-gray-600) text-lg max-w-2xl mx-auto">
@@ -114,7 +144,9 @@ export default function AboutPage() {
                   </div>
                   <h3 className="mb-1 font-poppins">{member.name}</h3>
                   <p className="text-brand-indigo mb-1">{member.role}</p>
-                  <p className="text-sm text-(--neutral-gray-600)">{member.expertise}</p>
+                  <p className="text-sm text-(--neutral-gray-600)">
+                    {member.expertise}
+                  </p>
                 </div>
               </AnimatedSection>
             ))}
@@ -125,7 +157,10 @@ export default function AboutPage() {
       <section className="py-20 bg-neutral-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="mb-4 font-poppins" style={{ fontSize: 'clamp(1.75rem, 4vw, 2rem)' }}>
+            <h2
+              className="mb-4 font-poppins"
+              style={{ fontSize: "clamp(1.75rem, 4vw, 2rem)" }}
+            >
               Notre Histoire
             </h2>
           </AnimatedSection>
@@ -136,11 +171,16 @@ export default function AboutPage() {
                 <div className="relative pl-8 md:pl-16 border-l-2 border-brand-indigo">
                   <div className="absolute -left-3 top-0 w-6 h-6 rounded-full gradient-cyber" />
                   <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="text-brand-indigo mb-2 font-poppins" style={{ fontSize: '1.5rem' }}>
+                    <div
+                      className="text-brand-indigo mb-2 font-poppins"
+                      style={{ fontSize: "1.5rem" }}
+                    >
                       {milestone.year}
                     </div>
                     <h3 className="mb-2 font-poppins">{milestone.event}</h3>
-                    <p className="text-(--neutral-gray-600)">{milestone.description}</p>
+                    <p className="text-(--neutral-gray-600)">
+                      {milestone.description}
+                    </p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -152,7 +192,10 @@ export default function AboutPage() {
       <section className="py-20 bg-linear-to-br from-brand-blue-900 to-brand-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <h2 className="mb-4 font-poppins" style={{ fontSize: 'clamp(1.75rem, 4vw, 2rem)' }}>
+            <h2
+              className="mb-4 font-poppins"
+              style={{ fontSize: "clamp(1.75rem, 4vw, 2rem)" }}
+            >
               Rejoignez nos clients satisfaits
             </h2>
             <p className="text-xl text-gray-300 mb-8">
